@@ -1,0 +1,3 @@
+mettre un hover , reduire l'opaciter quand on décale la nav bar 
+voir pour mettre le top du moment au dessus du hero 
+voir pour le mobile 
