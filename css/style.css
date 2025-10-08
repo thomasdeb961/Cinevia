@@ -309,6 +309,8 @@ nav a {
   padding: 40px 20px;
   background: #000;
   color: white;
+  
+  
 
   h2 {
     font-size: 1.5rem;
@@ -320,16 +322,18 @@ nav a {
     gap: 20px;
     overflow-x: auto; /* scroll horizontal si trop de films */
     padding-bottom: 10px;
-    scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer / Edge */
+    scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  
   }
   .watching-grid::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none; 
 }
 
   .watch-card {
     flex: 0 0 250px;
     position: relative;
+    
 
     .poster {
       position: relative;
@@ -377,6 +381,7 @@ nav a {
         .progress {
           height: 100%;
           background: red;
+          
         }
       }
     }

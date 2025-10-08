@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/sass/pages/_home.scss">
     <title>Cinevia</title>
 </head>
 <body>
@@ -14,10 +14,10 @@
             </div>
             <ul class="nav-links">
                 <li><a href="/">Acceuil</a></li>
-                <li><a href="/série">Série</a></li>
-                <li><a href="/film">TV Film</a></li>
-                <li><a href="/new">Nouveauté et populaire</a></li>
-                <li><a href="/list">Ma liste</a></li>
+                <li><a href="/pages/series.html">Série</a></li>
+                <li><a href="/pages/films.html">TV Film</a></li>
+                <li><a href="/new">Nouveautés</a></li>
+                <li><a href="/pages/maliste.html">Ma liste</a></li>
             </ul>
             <div class="droite">
             <div class="search-bar">
@@ -67,7 +67,7 @@
       <div class="poster">
         <img src="/public/img/superman.png" alt="Superman">
         <div class="overlay">
-          <button class="play-btn">▶</button>
+          <button class="play-bouton">▶</button>
         </div>
       </div>
       <div class="info">
@@ -83,7 +83,7 @@
       <div class="poster">
         <img src="/public/img/lilo.png" alt="Lilo et Stitch">
         <div class="overlay">
-          <button class="play-btn">▶</button>
+          <button class="play-bouton">▶</button>
         </div>
       </div>
       <div class="info">
@@ -99,7 +99,7 @@
       <div class="poster">
         <img src="/public/img/l'ete ou .png" alt="L'été où je suis devenue jolie">
         <div class="overlay">
-          <button class="play-btn">▶</button>
+          <button class="play-bouton">▶</button>
         </div>
       </div>
       <div class="info">
@@ -115,7 +115,7 @@
       <div class="poster">
         <img src="/public/img/Mercredi.png" alt="Mercredi">
         <div class="overlay">
-          <button class="play-btn">▶</button>
+          <button class="play-bouton">▶</button>
         </div>
       </div>
       <div class="info">
@@ -131,7 +131,7 @@
       <div class="poster">
         <img src="/public/img/mission impossible.png" alt="Mission Impossible">
         <div class="overlay">
-          <button class="play-btn">▶</button>
+          <button class="play-bouton">▶</button>
         </div>
       </div>
       <div class="info">
@@ -150,7 +150,7 @@
       <div class="poster">
         <img src="/public/img/continuer vue.png" alt="Game of Thrones">
         <div class="overlay">
-          <button class="play-btn">▶</button>
+          <button class="play-bouton">▶</button>
         </div>
         <div class="progress-bar">
           <div class="progress" style="width: 60%;"></div>
@@ -163,7 +163,7 @@
       <div class="poster">
         <img src="/public/img/continuer vue2.png" alt="À Contre-Sens 3">
         <div class="overlay">
-          <button class="play-btn">▶</button>
+          <button class="play-bouton">▶</button>
         </div>
         <div class="progress-bar">
           <div class="progress" style="width: 35%;"></div>
@@ -176,7 +176,7 @@
       <div class="poster">
         <img src="/public/img/continuer vue2.png" alt="Mission Impossible">
         <div class="overlay">
-          <button class="play-btn">▶</button>
+          <button class="play-bouton">▶</button>
         </div>
         <div class="progress-bar">
           <div class="progress" style="width: 80%;"></div>
@@ -188,7 +188,7 @@
       <div class="poster">
         <img src="/public/img/continuer vue2.png" alt="Mission Impossible">
         <div class="overlay">
-          <button class="play-btn">▶</button>
+          <button class="play-bouton">▶</button>
         </div>
         <div class="progress-bar">
           <div class="progress" style="width: 80%;"></div>
@@ -200,7 +200,7 @@
       <div class="poster">
         <img src="/public/img/continuer vue2.png" alt="Mission Impossible">
         <div class="overlay">
-          <button class="play-btn">▶</button>
+          <button class="play-bouton">▶</button>
         </div>
         <div class="progress-bar">
           <div class="progress" style="width: 80%;"></div>
@@ -212,7 +212,7 @@
       <div class="poster">
         <img src="/public/img/continuer vue2.png" alt="Mission Impossible">
         <div class="overlay">
-          <button class="play-btn">▶</button>
+          <button class="play-bouton">▶</button>
         </div>
         <div class="progress-bar">
           <div class="progress" style="width: 80%;"></div>
@@ -221,5 +221,221 @@
     </div>
   </div>
 </section>
+
+
+
+
+
+<!-- dernières sorties -->
+<section class="latest-releases">
+  <svg xmlns="http://www.w3.org/2000/svg" 
+       class="background-svg"
+       width="100%" height="1500" 
+       viewBox="0 0 1920 2725" 
+       fill="none" 
+       preserveAspectRatio="none">
+    <path d="M1999.37 20.8301C1901.5 -70.5 392 371 -92 69.3418V2698.47C-92 2775.69 1302.25 2592.95 1999.37 2491.92C2042.86 1693.23 2087.39 102.975 1999.37 20.8301Z" 
+          fill="url(#paint0_linear_134_3)" 
+          stroke="white" 
+          stroke-width="6"/>
+    <defs>
+      <linearGradient id="paint0_linear_134_3" 
+                      x1="982.5" y1="-3" 
+                      x2="982.5" y2="2717" 
+                      gradientUnits="userSpaceOnUse">
+        <stop stop-color="#157BF6"/>
+        <stop offset="1" stop-color="#850DFB"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <div class="container">
+  <h2>DERNIÈRES SORTIES</h2>
+
+  <!-- Catégorie : Action -->
+  <div class="category">
+    <h3>Action</h3>
+    <div class="films-grid">
+      <div class="film-card">
+        <img src="/public/img/f1 affiche.png" alt="John Wick 4">
+        <div class="overlay">
+          <button class="play-bouton">▶</button>
+        </div>
+        <div class="info">
+          <h4>John Wick 4</h4>
+          <p class="stars">★★★★☆</p>
+        </div>
+      </div>
+
+      <div class="film-card">
+        <img src="/public/img/f1 affiche.png" alt="Extraction 2">
+        <div class="overlay">
+          <button class="play-bouton">▶</button>
+        </div>
+        <div class="info">
+          <h4>Extraction 2</h4>
+          <p class="stars">★★★★☆</p>
+        </div>
+      </div>
+
+      <div class="film-card">
+        <img src="/public/img/f1 affiche.png" alt="Extraction 2">
+        <div class="overlay">
+          <button class="play-bouton">▶</button>
+        </div>
+        <div class="info">
+          <h4>Extraction 2</h4>
+          <p class="stars">★★★★☆</p>
+        </div>
+      </div>
+
+      <div class="film-card">
+        <img src="/public/img/f1 affiche.png" alt="Extraction 2">
+        <div class="overlay">
+          <button class="play-bouton">▶</button>
+        </div>
+        <div class="info">
+          <h4>Extraction 2</h4>
+          <p class="stars">★★★★☆</p>
+        </div>
+      </div>
+
+
+      <div class="film-card">
+        <img src="/public/img/f1 affiche.png" alt="Extraction 2">
+        <div class="overlay">
+          <button class="play-bouton">▶</button>
+        </div>
+        <div class="info">
+          <h4>Extraction 2</h4>
+          <p class="stars">★★★★☆</p>
+        </div>
+      </div>
+
+
+
+      <div class="film-card">
+        <img src="/public/img/f1 affiche.png" alt="Mission Impossible">
+        <div class="overlay">
+          <button class="play-bouton">▶</button>
+        </div>
+        <div class="info">
+          <h4>Mission Impossible</h4>
+          <p class="stars">★★★★★</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Catégorie : Romance -->
+  <div class="category">
+    <h3>Romance</h3>
+    <div class="films-grid">
+      <div class="film-card">
+        <img src="/public/img/f1 affiche.png" alt="Titanic">
+        <div class="overlay">
+          <button class="play-bouton">▶</button>
+        </div>
+        <div class="info">
+          <h4>Titanic</h4>
+          <p class="stars">★★★★★</p>
+        </div>
+      </div>
+
+      <div class="film-card">
+        <img src="/public/img/f1 affiche.png" alt="The Notebook">
+        <div class="overlay">
+          <button class="play-bouton">▶</button>
+        </div>
+        <div class="info">
+          <h4>The Notebook</h4>
+          <p class="stars">★★★★☆</p>
+        </div>
+      </div>
+
+      <div class="film-card">
+        <img src="/public/img/f1 affiche.png" alt="The Notebook">
+        <div class="overlay">
+          <button class="play-bouton">▶</button>
+        </div>
+        <div class="info">
+          <h4>The Notebook</h4>
+          <p class="stars">★★★★☆</p>
+        </div>
+      </div>
+
+      <div class="film-card">
+        <img src="/public/img/f1 affiche.png" alt="The Notebook">
+        <div class="overlay">
+          <button class="play-bouton">▶</button>
+        </div>
+        <div class="info">
+          <h4>The Notebook</h4>
+          <p class="stars">★★★★☆</p>
+        </div>
+      </div>
+
+      <div class="film-card">
+        <img src="/public/img/f1 affiche.png" alt="The Notebook">
+        <div class="overlay">
+          <button class="play-bouton">▶</button>
+        </div>
+        <div class="info">
+          <h4>The Notebook</h4>
+          <p class="stars">★★★★☆</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <img src="/public/img/logo.png" alt="">
+      
+      <p>Regardez vos films et séries préférés, où vous voulez, quand vous voulez.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/film">Films</a></li>
+        <li><a href="/série">Séries</a></li>
+        <li><a href="/new">Nouveautés</a></li>
+        <li><a href="/list">Ma liste</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Suivez-nous</h4>
+      <div class="socials">
+        <a href="#"><img src="/public/img/facebook (4).svg" alt="Facebook"></a>
+        <a href="#"><img src="/public/img/instagram (5).svg" alt="Instagram"></a>
+        <a href="#"><img src="/public/img/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="/public/img/youtube.svg" alt="YouTube"></a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email : <a href="mailto:contact@cinevia.com">contact@cinevia.com</a></p>
+      <p>Téléphone : 01 23 45 67 89</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Cinevia. Tous droits réservés.</p>
+  </div>
+</footer>
+<!--terminer et ajuster la dernière section en sorte qu'on peu afficher plusieurs films et serie dans la 
+catéguories et mettres encores quelques categuories
+refères le codes scss 
+passer sur l'autre page 
+responsive  -->
 </body>
 </html>
