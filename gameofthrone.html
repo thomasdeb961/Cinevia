@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game of Thrones - Regarder la série</title>
+  <link rel="stylesheet" href="/sass/pages/_watch.scss" />
+</head>
+<body>
+
+  <main class="watch-page">
+
+    <!-- Bouton retour -->
+    <button class="back-btn" onclick="window.location.href='../index.html'">← Retour</button>
+
+    <!-- Bande-annonce -->
+    <div class="trailer">
+      <iframe 
+        src="https://www.youtube.com/embed/KPLWWIOCOOQ" 
+        title="Bande-annonce Game of Thrones" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Détails de la série -->
+    <div class="details">
+      <p class="meta">
+        <span class="type">Série</span> • <span class="year">2011</span>
+      </p>
+      <h1>Game of Thrones</h1>
+      <p class="description">
+        Dans le royaume des Sept Couronnes, plusieurs familles nobles se disputent le trône de fer. 
+        Entre alliances, trahisons et batailles sanglantes, chaque maison tente de survivre 
+        dans un monde où le pouvoir se gagne au prix du sang.
+      </p>
+      <p class="rating">★★★★★</p>
+
+      <!-- Barre de progression -->
+      <div class="progress-bar large">
+        <div class="progress" style="width: 60%;"></div>
+      </div>
+
+      <button class="start-btn">Continuer</button>
+    </div>
+  </main>
+
+</body>
+</html>

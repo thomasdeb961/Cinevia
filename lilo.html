@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lilo & Stitch - Regarder le film</title>
+  <link rel="stylesheet" href="/sass/pages/_watch.scss" />
+</head>
+<body>
+
+  <main class="watch-page">
+
+    <!-- Bouton retour -->
+    <button class="back-btn" onclick="window.location.href='../index.html'">← Retour</button>
+
+    <!-- Bande-annonce -->
+    <div class="trailer">
+      <iframe 
+        src="https://www.youtube.com/embed/fBYp1DtdHuE" 
+        title="Bande-annonce Lilo & Stitch" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Détails du film -->
+    <div class="details">
+      <p class="meta">
+        <span class="type">Film</span> • <span class="year">2002</span>
+      </p>
+      <h1>Lilo & Stitch</h1>
+      <p class="description">
+        Lilo est une petite fille hawaïenne solitaire qui adopte un étrange animal de compagnie nommé Stitch.
+        Mais Stitch est en réalité une expérience génétiquement modifiée, très turbulente et capable de tout casser.
+        Ensemble, ils vont apprendre ce que signifie la famille et l’amitié.
+      </p>
+      <p class="rating">★★★★★</p>
+      <button class="start-btn">Commencer</button>
+    </div>
+  </main>
+
+</body>
+</html>

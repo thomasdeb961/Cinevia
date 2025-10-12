@@ -1,13 +1,4 @@
-@import 'base/reset';
-@import 'base/variables';
-@import 'base/typography';
-
-@import 'components/header';
-@import 'components/footer';
-@import 'components/buttons';
-@import 'components/cards';
-
-@import 'pages/home';
-@import 'pages/films';
-@import 'pages/series';
-@import 'pages/maliste';
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'components' as *;
+@use 'pages' as *;

@@ -1,15 +1,5 @@
-$color_1: white;
-$color_2: #fff;
-$color_3: black;
-$color_4: transparent;
-$color_5: rgb(191, 191, 191);
-$color_6: #000;
-$color_7: #0074ff;
-$font-family_1: Arial, sans-serif;
-$font-family_2: "Arial", sans-serif;
-$background-color_1: #445a63;
-$border-color_1: #2F3F47;
-
+@use '/sass/variables' as *;
+@use '/sass/components/home-card' as *;
 
 /*# sourceMappingURL=style.css.map */
 
@@ -142,110 +132,35 @@ body {
   margin: 0;
 }
 
-.my-list {
-  padding: 140px 40px 80px;
-  text-align: center;
+//section2
 
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    background: linear-gradient(to right, #157BF6, #850DFB);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+.continue-watching {
+	padding: 100px 20px;
+	padding-bottom: 80px;
+	background: transparent;
+	color: $color_1;
+  
 
-  .subtitle {
-    color: #ccc;
-    font-size: 1rem;
-    margin-bottom: 40px;
-  }
-
-  .list-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    justify-items: center;
-  }
-
-  .list-card {
-    position: relative;
-    background: #2f3f47;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    &:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-    }
-
-    img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
-    }
-
-    .overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.6);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-
-    .info {
-      padding: 10px;
-      h3 {
-        margin: 10px 0 5px;
-        color: white;
-        font-size: 1.1rem;
-      }
-      .type {
-        color: #ccc;
-        font-size: 0.9rem;
-        margin: 0;
-      }
-      .rating {
-        color: #0074ff;
-        font-weight: bold;
-      }
-    }
-  }
-
-  .empty-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #ccc;
-    margin-top: 60px;
-
-    p {
-      margin-bottom: 20px;
-      font-size: 1.2rem;
-    }
-
-    .btn-explore {
-      background: #0074ff;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-
-      &:hover {
-        background: #005fcc;
-      }
-    }
-  }
+	h2 {
+		font-size: 1.5rem;
+		margin-bottom: 50px;
+	}
 }
+
+.movies {
+	padding: 10px 20px;
+	background: #445a63;
+  border-bottom: 2px solid white;
+	z-index: 1000;
+
+	h2 {
+		font-size: 1.8rem;
+		margin-bottom: 30px;
+		color: $color_1;
+	}
+}
+
+
 
 //footer
 .footer {
@@ -333,3 +248,88 @@ body {
   font-size: 0.9rem;
 }
 
+
+/*mobile responsive*/
+@media (max-width: 768px) {
+  /* NAVIGATION */
+  nav {
+    display: flex;
+    flex-direction:row;
+    padding-bottom: 10px;
+    padding-left: 30px;
+
+    ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 15px;
+      padding-bottom: 10px;
+      
+      gap: 10px;
+    }
+
+    a {
+      font-size: 0.8rem;
+      padding: 10px 0px;
+      margin-left: -2em;
+    }
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .user-profile img {
+    margin-right: -90px;
+    height: 30px;
+  }
+
+  .droite {
+    flex-direction: row;
+    margin-right: -30px;
+    gap: 35px;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .language-select select {
+    width: 100%;
+    font-size: 10px;
+  }
+
+
+  /* FOOTER */
+  .footer {
+    padding: 40px 20px 20px;
+    text-align: center;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-section img {
+    width: 120px;
+    margin: 0 auto 10px;
+  }
+
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+
+  .footer-section p,
+  .footer-section ul li a {
+    font-size: 0.85rem;
+  }
+
+  .footer .socials {
+    justify-content: center;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}
