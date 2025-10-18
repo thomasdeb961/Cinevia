@@ -297,6 +297,7 @@ nav {
   }
 }
 
+
 /*mobile responsive*/
 @media (max-width: 768px) {
   /* NAVIGATION */
@@ -348,6 +349,126 @@ nav {
   }
 
 
+  .hero {
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+
+    .hero-content {
+      max-width: 100%;
+    }
+
+    .hero-buttons {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      button {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  }
+
+  /* MOVIES SECTION */
+  .movies-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:35px;
+  }
+
+  .movie-card {
+    text-align: center;
+    align-items: center;
+
+    img {
+      width: 20em;
+      height: auto;
+      padding-left: 30px;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    .rating {
+      font-size: 0.6rem;
+    }
+  }
+
+  /* CONTINUE WATCHING */
+  .continue-watching {
+    h2 {
+      text-align: center;
+      font-size: 1.4rem;
+    }
+
+    .watching-grid {
+      padding-right: 20px;
+      padding-left:20px ;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .watch-card img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  /* DERNIÈRES SORTIES */
+  .latest-releases {
+    background-color: #0074ff;
+    svg{
+      display:none;
+    }
+
+    h2,
+    h3 {
+      text-align: center;
+      font-size: 1.4rem;
+    }
+
+    .films-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .film-card {
+      text-align: center;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      h4 {
+        font-size: 1rem;
+      }
+
+      .stars {
+        font-size: 0.85rem;
+      }
+    }
+  }
   
 /* FOOTER */
   .footer {
