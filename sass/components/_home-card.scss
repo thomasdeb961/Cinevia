@@ -1,5 +1,6 @@
-@use '/sass/components/button' as *;
-@use '/sass/variables' as *;
+@use "../components/button";
+@use "../variables" as * ;
+
 
 // SECTION 1
 p {

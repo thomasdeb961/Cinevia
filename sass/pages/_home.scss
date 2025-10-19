@@ -1,6 +1,7 @@
-@use '/sass/components/film-serie-card' as *;
-@use '/sass/variables' as *;
-@forward "/sass/components/home-card";
+@use '../components/film-serie-card' as *;
+@use '../variables' as *;
+@forward "../components/home-card";
+@use "sass:color";
 
 body {
   background-color: $background-color_1;
@@ -163,7 +164,7 @@ nav {
       color: $color_2;
 
       &:hover {
-        background: darken($color_7, 10%);
+        background: color.adjust($color_7, $lightness: -10%);
       }
     }
 
