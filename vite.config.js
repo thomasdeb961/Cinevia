@@ -18,6 +18,7 @@ export default defineConfig({
         films: resolve(__dirname, 'pages/films.html'),
         maliste: resolve(__dirname, 'pages/maliste.html'),
         series: resolve(__dirname, 'pages/series.html'),
+        inscription: resolve(__dirname, 'pages/inscription.html'),
       },
     },
   },
