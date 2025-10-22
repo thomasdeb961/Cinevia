@@ -1,6 +1,6 @@
-@use '../components/film-serie-card' as *;
+@forward '../components/film-serie-card';
 @use '../variables' as *;
-@use "../components/home-card";
+@forward "../components/home-card";
 @use "sass:color";
 @use '../mixins' as *;
 
@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   padding: 50px;
-  border-bottom: 2.5px solid white;
+  border-bottom: 2.5px solid $color_1;
   margin-bottom: 10px;
   box-sizing: border-box;
 
@@ -96,8 +96,8 @@ body {
 
 .movies {
   padding: 10px 20px;
-  background: #445a63;
-  border-bottom: 2.5px solid white;
+  background: $color-bg;
+  border-bottom: 2.5px solid $color_1;
   z-index: 10;
 
   h2 {

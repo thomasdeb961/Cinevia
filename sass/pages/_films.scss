@@ -1,4 +1,4 @@
-@use '../components/film-serie-card' as *;
+@forward '../components/film-serie-card';
 @use '../_variables' as *;
 @use '../mixins' as *;
 
@@ -51,7 +51,7 @@ body {
       padding-left: 15px;
       border-left: 5px solid $color_1;
       text-transform: uppercase;
-      color: #fff;
+      color: $color_2;
     }
   }
 }
