@@ -243,3 +243,150 @@ p {
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  // --- Texte général ---
+  .background-svg{display: none;}
+  p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  // --- Grille principale de films ---
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .movie-card {
+    text-align: center;
+
+    .rank {
+      font-size: 4rem;
+      bottom: 40px;
+      left: 10px;
+    }
+  }
+
+  .poster {
+    border-radius: 6px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+  }
+
+  .overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .info {
+    margin-top: 5px;
+
+    .type {
+      font-size: 0.7rem;
+    }
+
+    h3 {
+      font-size: 0.9rem;
+    }
+  }
+
+  .rating {
+    font-size: 0.8rem;
+  }
+
+  // --- Bouton lecture ---
+  .play-bouton {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  // --- Grille continue watching ---
+  .watching-grid {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 5px;
+  }
+
+  .watch-card {
+    flex: 0 0 180px;
+
+    .poster img {
+      border-radius: 8px;
+      height: auto;
+    }
+
+    .progress-bar {
+      height: 4px;
+
+      .progress {
+        background: #ff0000;
+      }
+    }
+  }
+
+  // --- Dernières sorties ---
+  .latest-releases {
+    padding: 60px 10px;
+    text-align: center;
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      padding: 10px;
+    }
+
+    .category {
+      margin-bottom: 40px;
+
+      h3 {
+        font-size: 1rem;
+        padding-left: 6px;
+      }
+
+      .films-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      .film-card {
+        border-radius: 8px;
+
+        img {
+          height: 180px;
+          object-fit: cover;
+        }
+
+        .info {
+          padding: 6px;
+
+          h4 {
+            font-size: 0.9rem;
+          }
+
+          .stars {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

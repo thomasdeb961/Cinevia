@@ -107,6 +107,63 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 170px 20px;
+    background-position: center;
+    background-size: cover;
+
+    .hero-content {
+      max-width: 100%;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-buttons {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 25px;
+
+      button {
+        width: 80%;
+        font-size: 1rem;
+        padding: 10px 15px;
+      }
+    }
+  }
+
+  .continue-watching {
+    padding: 30px 15px 50px;
+    text-align: center;
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  .movies {
+    padding: 15px;
+    text-align: center;
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
 
 
 @include footer;
