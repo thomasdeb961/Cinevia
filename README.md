@@ -3,10 +3,10 @@ et intuitive inspirée des plateformes de streaming. L’utilisateur peut y déc
 et naviguer entre différentes pages au design cohérent et responsive.
 
 Pour lancer le projet, il suffit d’installer les dépendances avec la commande pnpm install, puis d’exécuter pnpm run dev pour démarrer le serveur 
-de développement. La commande pnpm run build permet de générer la version de production et pnpm run preview d’en faire la prévisualisation.
+de développement. La commande pnpm run build permet de générer la version de production et pnpm run dev d’en faire la prévisualisation.
 
 L’arborescence du projet est structurée de manière claire : le dossier pages contient les différentes pages HTML (films, séries, inscription, ma liste), 
-tandis que le dossier public/sass regroupe les fichiers SCSS organisés en sous-dossiers (components, pages, ainsi que les fichiers mixins.scss, variables.scss et style.scss). 
+tandis que le dossier /sass regroupe les fichiers SCSS organisés en sous-dossiers (components, pages, ainsi que les fichiers mixins.scss, variables.scss et style.scss). 
 Cette organisation permet une meilleure lisibilité du code et une maintenance simplifiée.
 
 Le site comprend plusieurs pages principales : index.html, films.html, series.html, maliste.html et inscription.html. D’autres pages individuelles, 
@@ -26,8 +26,8 @@ Cinevia a été optimisé en termes de performance et d’accessibilité. Selon 
 90/100 en performance, 95/100 en accessibilité, 100/100 en bonnes pratiques et 95/100 en SEO. Les points d’amélioration identifiés concernent principalement 
 l’optimisation du poids des images et l’ajout de balises alt plus détaillées pour renforcer l’accessibilité.
 
-Les fichiers SCSS sources se trouvent dans public/sass/, tandis que le CSS compilé est généré automatiquement dans le dossier dist/ après la commande pnpm run build. 
+Les fichiers SCSS sources se trouvent dans /sass/, tandis que le CSS compilé est généré automatiquement dans le dossier dist/ après la commande pnpm run build. 
 Cette approche permet de séparer clairement les fichiers de développement et ceux de production.
 
-Cinevia a été conçu comme un projet d’intégration web dans le cadre du cours de développement front-end à MyDigitalSchool, combinant rigueur technique et 
+Cinevia a été conçu comme un projet d’intégration web dans le cadre du cours d'intégration web à MyDigitalSchool, combinant rigueur technique et 
 sens esthétique pour proposer une expérience utilisateur immersive et fonctionnelle.
