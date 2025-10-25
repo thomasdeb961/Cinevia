@@ -17,7 +17,7 @@ L’interface a été pensée pour être à la fois sobre et immersive. Les coul
 représenter la technologie et la modernité, du gris et du noir (#445a63, #000) pour renforcer le contraste et mettre en valeur les visuels, ainsi que 
 du blanc et du doré (white, gold) pour assurer une bonne lisibilité et ajouter une touche élégante. La typographie Arial, 
 simple et efficace, garantit une lecture agréable sur tous les supports. L’ensemble du site repose sur une mise en page responsive, adaptée aussi bien 
-aux écrans d’ordinateurs qu’aux smartphones.
+aux écrans d’ordinateurs qu’aux smartphones sachant que ce projet a eu 91/100 au niveau de SEO.
 
 Les composants (boutons, cartes de films et séries, etc.) ont été créés avec soin pour offrir une expérience fluide et homogène. Les effets de survol, 
 les transitions et la hiérarchie visuelle contribuent à une navigation agréable et intuitive.
