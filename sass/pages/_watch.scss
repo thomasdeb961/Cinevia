@@ -10,6 +10,32 @@ body {
 }
 
 /* ==== PAGE WATCH ==== */
+.breadcrumb ul {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.breadcrumb li::after {
+  content: "›";
+  margin: 0 5px;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: $color-accent; /* couleur bleue pour le lien */
+}
+
+.breadcrumb li:last-child {
+  font-weight: bold;
+  color: $color_6; /* couleur noire pour la page actuelle */
+}
 .watch-page {
   max-width: 900px;
   margin: 0 auto;
@@ -53,8 +79,7 @@ body {
       font-size: 2.5rem;
       letter-spacing: 1px;
       background: linear-gradient(90deg, $color-gradient-start, $color-gradient-end);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+     
       margin-bottom: 15px;
     }
 

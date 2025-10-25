@@ -56,6 +56,33 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  /* PAGE FILMS */
+  .films-page {
+    padding: 160px 60px 40px;
+
+    .hero-film {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 0 10px;
+      }
+    }
+
+    .film-categories {
+      margin: 0 auto 50px;
+
+      h2 {
+        font-size: 1.3rem;
+        padding-left: 10px;
+      }
+    }
+  }}
+    
+
 // FOOTER
 @include footer;
 

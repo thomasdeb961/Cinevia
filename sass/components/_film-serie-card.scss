@@ -1,8 +1,7 @@
 @use "../components/button";
+@use '../variables' as *;
 
 //film
-
-
 // GRILLE DE FILMS
     .films-grid {
       display: grid;
@@ -15,7 +14,7 @@
       position: relative;
       border-radius: 15px;
       overflow: hidden;
-      background-color: #1a1a1a;
+      background-color: $color_3;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
 

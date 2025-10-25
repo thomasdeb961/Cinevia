@@ -6,7 +6,7 @@
 
 
 body {
-  background: linear-gradient(180deg, #2F3F47 0%, #1E272C 100%);
+  background: $background-color_1;
   color: $color_1;
   font-family: "Poppins", Arial, sans-serif;
   margin: 0;
@@ -30,7 +30,7 @@ body {
 
 .movies {
 	padding: 10px 20px;
-	background: #445a63;
+	background: $background-color_1;
   border-bottom: 2px solid $color_1;
 	z-index: 1000;
 
