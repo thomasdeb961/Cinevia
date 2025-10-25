@@ -27,3 +27,4 @@ Cette approche permet de séparer clairement les fichiers de développement et c
 
 Cinevia a été conçu comme un projet d’intégration web dans le cadre du cours d'intégration web à MyDigitalSchool, combinant rigueur technique et 
 sens esthétique pour proposer une expérience utilisateur immersive et fonctionnelle.
+
