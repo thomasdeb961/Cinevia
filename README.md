@@ -22,10 +22,6 @@ aux écrans d’ordinateurs qu’aux smartphones.
 Les composants (boutons, cartes de films et séries, etc.) ont été créés avec soin pour offrir une expérience fluide et homogène. Les effets de survol, 
 les transitions et la hiérarchie visuelle contribuent à une navigation agréable et intuitive.
 
-Cinevia a été optimisé en termes de performance et d’accessibilité. Selon les tests Lighthouse, le site obtient de bons résultats avec des scores avoisinant 
-90/100 en performance, 95/100 en accessibilité, 100/100 en bonnes pratiques et 95/100 en SEO. Les points d’amélioration identifiés concernent principalement 
-l’optimisation du poids des images et l’ajout de balises alt plus détaillées pour renforcer l’accessibilité.
-
 Les fichiers SCSS sources se trouvent dans /sass/, tandis que le CSS compilé est généré automatiquement dans le dossier dist/ après la commande pnpm run build. 
 Cette approche permet de séparer clairement les fichiers de développement et ceux de production.
 
